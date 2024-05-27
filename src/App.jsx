@@ -5,7 +5,7 @@ import Chart from './Components/Chart';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './Components/NavBar';
-import TableComp from './Components/TableComp';
+import TableComp from './Components/Table.jsx';
 import Footer from './Components/Footer.jsx';
 
 
@@ -13,7 +13,9 @@ function App() {
   return (
     <div className="app-container">
       <Sidebar />
+      
       <div className="main-content">
+      
       <NavBar></NavBar>
         <div className="chart-section">
           <Chart />

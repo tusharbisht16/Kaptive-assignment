@@ -1,28 +1,47 @@
-
-
-import data from "../data/Case Study _ Front End (Json).json";
 import ReactPaginate from "react-paginate";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import ToggleButtonGroup from "./Cashflownav2";
+import "./table.css"
 
 const formatNumber = (num) => Math.floor(num);
 
 const TableComp = () => {
   const [currentPage, setCurrentPage] = useState(0);
+  const [data, setData] = useState([]);
   const itemsPerPage = 6;
 
   const handlePageClick = (event) => {
     setCurrentPage(event.selected);
   };
 
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        let fdata = await axios.get("https://kaptive-assignment-hcw9.onrender.com/Sheet1");
+        setData(fdata.data);
+        console.log(fdata.data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    fetchData();
+  }, []);
+
   const offset = currentPage * itemsPerPage;
-  const currentPageData = data.Sheet1.slice(offset, offset + itemsPerPage);
-  const pageCount = Math.ceil(data.Sheet1.length / itemsPerPage);
+  const currentPageData = data.slice(offset, offset + itemsPerPage);
+  const pageCount = Math.ceil(data.length / itemsPerPage);
+
   return (
     <>
-      <h3>Cashflow Summary - 1</h3>
+    <div className="d-flex justify-content-between mb-3">
+    <h3>Cashflow Summary - 1</h3>
+    <ToggleButtonGroup/>
+    </div>
+   
       <div className="table-responsive">
-        <table className="table table-striped" >
+        <table className="table table-striped">
           <thead className="table-primary">
             <tr>
               <th style={{ width: "300px", padding: "0.5rem" }}>Cashflow</th>
@@ -59,9 +78,7 @@ const TableComp = () => {
               } = d;
               return (
                 <tr key={Overhead}>
-                  <td style={{ width: "300px", padding: "0.5rem" }}>
-                    {Overhead}
-                  </td>
+                  <td style={{ width: "300px", padding: "0.5rem" }}>{Overhead}</td>
                   <td style={{ padding: "0.5rem" }}>{formatNumber(Jan)}</td>
                   <td style={{ padding: "0.5rem" }}>{formatNumber(Feb)}</td>
                   <td style={{ padding: "0.5rem" }}>{formatNumber(March)}</td>
@@ -70,16 +87,10 @@ const TableComp = () => {
                   <td style={{ padding: "0.5rem" }}>{formatNumber(June)}</td>
                   <td style={{ padding: "0.5rem" }}>{formatNumber(July)}</td>
                   <td style={{ padding: "0.5rem" }}>{formatNumber(August)}</td>
-                  <td style={{ padding: "0.5rem" }}>
-                    {formatNumber(September)}
-                  </td>
+                  <td style={{ padding: "0.5rem" }}>{formatNumber(September)}</td>
                   <td style={{ padding: "0.5rem" }}>{formatNumber(October)}</td>
-                  <td style={{ padding: "0.5rem" }}>
-                    {formatNumber(November)}
-                  </td>
-                  <td style={{ padding: "0.5rem" }}>
-                    {formatNumber(December)}
-                  </td>
+                  <td style={{ padding: "0.5rem" }}>{formatNumber(November)}</td>
+                  <td style={{ padding: "0.5rem" }}>{formatNumber(December)}</td>
                 </tr>
               );
             })}
@@ -87,16 +98,16 @@ const TableComp = () => {
         </table>
       </div>
       <ReactPaginate
+       
         previousLabel={"previous"}
         nextLabel={"next"}
         breakLabel={"..."}
         breakClassName={"break-me"}
         pageCount={pageCount}
         marginPagesDisplayed={2}
-        pageRangeDisplayed={5}
+        pageRangeDisplayed={2}
         onPageChange={handlePageClick}
         containerClassName={"pagination"}
-        subContainerClassName={"pages pagination"}
         activeClassName={"active"}
         pageClassName={"page-item"}
         pageLinkClassName={"page-link"}
@@ -106,7 +117,7 @@ const TableComp = () => {
         nextLinkClassName={"page-link"}
         breakLinkClassName={"page-link"}
         disabledClassName={"disabled"}
-      />
+       />
     </>
   );
 };

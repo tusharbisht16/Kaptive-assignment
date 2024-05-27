@@ -57,7 +57,7 @@ const Sidebar = () => {
         <hr />
         <div className="d-flex align-items-center text-white">
           <div className="me-2" style={{ background: 'white', borderRadius: '50%', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <img src="https://github.com/mdo.png" alt="User" width="32" height="32" className="rounded-circle" />
+            <img src="https://picjj.com/images/2024/05/27/EjaNU.jpg" alt="User" width="32" height="32" className="rounded-circle" />
           </div>
           <div>
             <p className="mb-0">Tushar Bisht</p>

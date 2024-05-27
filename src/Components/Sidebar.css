@@ -7,8 +7,9 @@
   .sidebar {
     width: 280px;
     height: 100%;
+    background-image: url("https://picjj.com/images/2024/05/27/EjZLV.jpg");
     transition: transform 0.3s ease;
-    background-color: #676af5 !important;
+   background-position: center;
   }
   
   .hamburger-icon {
