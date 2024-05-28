@@ -1,8 +1,19 @@
-# React + Vite
+# Kaptive-assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Introduction 
+This was an assignment given by Kaptive to test individuals' coding skills in front-end development.
 
-Currently, two official plugins are available:
+#Screenshot
+![image](https://github.com/tusharbisht16/Kaptive-assignment/assets/157601195/9e93e39a-2867-4ce0-bc61-69b8b32e5f5f)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+
+#Tech Stack
+-Html
+-Css
+-React
+-Bootstrap
+-chartjs
+-Render
+-JSON server
