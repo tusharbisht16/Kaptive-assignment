@@ -27,7 +27,10 @@ https://drive.google.com/file/d/19aLnD6zoPgnQPAZiuxJ6OfZPSx98qmmU/view?usp=shari
 
 ## Features
 
-
+- Chart
+- Responsiveness
+- data fetching
+- pagination
 
 ## design decisions or assumptions
 We have used HTML CSS, React and Bootstrap to design and add functionality to our website.
@@ -41,10 +44,11 @@ Sheeet1 - https://kaptive-assignment-hcw9.onrender.com/Sheet1
 
 ## Technology Stack
 
-Html
-Css
-React
-Bootstrap
-chartjs
-Render
-JSON server
+- HTML
+- CSS
+- React
+- Bootstrap
+- Axios
+- chartjs
+- Render
+- JSON server
