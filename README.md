@@ -13,7 +13,7 @@ Backend: https://kaptive-assignment-hcw9.onrender.com
 
 ## Directory Structure
 
-![Screenshot 2024-04-04 142010](https://github.com/tusharbisht16/New-york-times/assets/157601195/14d15a77-4b2d-4bc3-a2aa-866bd7eb651f)
+![image](https://github.com/tusharbisht16/Kaptive-assignment/assets/157601195/3ba603b8-0ad8-406d-8fbe-05929f49e31b)
 
 
 ## Video Walkthrough of the project
