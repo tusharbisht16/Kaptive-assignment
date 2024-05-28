@@ -40,10 +40,11 @@ Render was used for deploying the API which was created using Json-server.
 Sheeet1 - https://kaptive-assignment-hcw9.onrender.com/Sheet1
 
 ## Technology Stack
--Html
--Css
--React
--Bootstrap
--chartjs
--Render
--JSON server
+
+Html
+Css
+React
+Bootstrap
+chartjs
+Render
+JSON server
