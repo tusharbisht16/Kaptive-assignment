@@ -2,7 +2,10 @@ import  { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Sidebar.css'; // Import the CSS file
-
+import { MdBarChart } from "react-icons/md";
+import { GoTable } from "react-icons/go";
+import { TbReportAnalytics } from "react-icons/tb";
+import { BiSolidBinoculars } from "react-icons/bi";
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,7 +20,7 @@ const Sidebar = () => {
           <svg className="bi pe-none me-2" width="40" height="32">
             <use xlinkHref="#bootstrap"></use>
           </svg>
-          <span className="fs-4">PLSE</span>
+          <span className="fs-4 fw-bold">PLSE</span>
         </a>
 
         <ul className="nav nav-pills flex-column mb-auto">
@@ -26,6 +29,8 @@ const Sidebar = () => {
               <svg className="bi pe-none me-2" width="16" height="16">
                 <use xlinkHref="#home"></use>
               </svg>
+              <MdBarChart /> 
+              &nbsp;
               Charts
             </a>
           </li>
@@ -34,6 +39,8 @@ const Sidebar = () => {
               <svg className="bi pe-none me-2" width="16" height="16">
                 <use xlinkHref="#speedometer2"></use>
               </svg>
+              <GoTable/>
+              &nbsp;
               Table
             </a>
           </li>
@@ -42,6 +49,8 @@ const Sidebar = () => {
               <svg className="bi pe-none me-2" width="16" height="16">
                 <use xlinkHref="#table"></use>
               </svg>
+              <TbReportAnalytics/>
+              &nbsp;
               Report
             </a>
           </li>
@@ -50,6 +59,8 @@ const Sidebar = () => {
               <svg className="bi pe-none me-2" width="16" height="16">
                 <use xlinkHref="#grid"></use>
               </svg>
+             < BiSolidBinoculars/>
+             &nbsp;
               Forecast
             </a>
           </li>

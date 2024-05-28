@@ -5,8 +5,10 @@ import Chart from './Components/Chart';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './Components/NavBar';
-import TableComp from './Components/Table.jsx';
+
 import Footer from './Components/Footer.jsx';
+import Table from './Components/Table.jsx';
+
 
 
 function App() {
@@ -23,7 +25,7 @@ function App() {
      
         </div>
         <div className="table-section">
-          <TableComp></TableComp>
+          <Table></Table>
          
           </div>
          <div>

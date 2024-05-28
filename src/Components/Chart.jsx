@@ -10,17 +10,17 @@ const Chart = () => {
     datasets: [
       {
         label: 'Revenue',
-        data: [200, 160, 150, 117, 200, 160, 90, 97],
+        data: [200, 160, 150, 117, 200, 100, 90, 97],
         backgroundColor: 'rgba(153, 102, 255, 0.6)',
       },
       {
         label: 'COGS',
-        data: [50, 300, 180, 100, 250, 100, 150, 117],
+        data: [60, 80, 180, 100, 250, 180, 150, 117],
         backgroundColor: 'rgba(54, 162, 235, 0.6)',
       },
       {
         label: 'Gross Profit',
-        data: [100, 120, 90, 100, 100, 120, 100, 100],
+        data: [100, 120, 90, 100, 350, 120, 300, 200],
         backgroundColor: 'rgba(255, 159, 64, 0.6)',
       },
     ],

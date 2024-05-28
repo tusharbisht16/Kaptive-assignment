@@ -7,7 +7,7 @@ import "./table.css"
 
 const formatNumber = (num) => Math.floor(num);
 
-const TableComp = () => {
+const Table = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [data, setData] = useState([]);
   const itemsPerPage = 6;
@@ -122,4 +122,4 @@ const TableComp = () => {
   );
 };
 
-export default TableComp;
+export default Table;
